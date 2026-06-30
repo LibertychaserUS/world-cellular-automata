@@ -1,0 +1,29 @@
+{
+  "name": "wca-exp-control-ts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Isolated non-production shadow TypeScript dry-run planner scaffold for the WCA experiment control plane.",
+  "scripts": {
+    "shadow:dry-run": "node --experimental-strip-types src/cli.ts",
+    "shadow:planner-compare": "node --experimental-strip-types src/cli.ts planner-compare",
+    "shadow:parity": "node --experimental-strip-types src/cli.ts parity-report",
+    "shadow:inventory-parity": "node --experimental-strip-types src/cli.ts inventory-parity",
+    "shadow:report-gate-parity": "node --experimental-strip-types src/cli.ts report-gate-parity",
+    "shadow:extract-profiles": "node --experimental-strip-types src/cli.ts extract-profiles",
+    "shadow:audit-profiles": "node --experimental-strip-types src/cli.ts audit-profiles",
+    "shadow:queue-status": "node --experimental-strip-types src/cli.ts queue-status",
+    "shadow:queue-status-parity": "node --experimental-strip-types src/cli.ts queue-status-parity",
+    "shadow:mock-active-control": "node --experimental-strip-types src/cli.ts mock-active-control",
+    "shadow:migration-readiness": "node --experimental-strip-types src/cli.ts migration-readiness",
+    "shadow:lease-store-validate": "node --experimental-strip-types src/cli.ts lease-store-validate",
+    "shadow:fetch-package-validate": "node --experimental-strip-types src/cli.ts fetch-package-validate",
+    "shadow:remote-status-snapshot-validate": "node --experimental-strip-types src/cli.ts remote-status-snapshot-validate",
+    "shadow:kernel-equivalence-validate": "node --experimental-strip-types src/cli.ts kernel-equivalence-validate",
+    "shadow:acceptance": "node --experimental-strip-types --test tests/shadow_acceptance.test.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22.6"
+  }
+}

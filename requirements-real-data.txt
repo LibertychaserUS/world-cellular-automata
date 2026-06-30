@@ -1,0 +1,10 @@
+huggingface_hub
+h5py
+xarray
+zarr
+netcdf4
+h5netcdf
+dask
+fsspec
+gcsfs
+scipy

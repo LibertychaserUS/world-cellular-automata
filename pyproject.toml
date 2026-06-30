@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wca"
+version = "0.1.0"
+description = "World Cellular Automata research prototype"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "torch",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+real-data = [
+    "huggingface_hub",
+    "h5py",
+    "xarray",
+    "zarr",
+    "netcdf4",
+    "h5netcdf",
+    "dask",
+    "fsspec",
+    "gcsfs",
+    "scipy",
+]
+viz = [
+    "matplotlib",
+    "seaborn",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = [".", "src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+src = ["src", "scripts", "tests"]
+exclude = [
+    ".git",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "artifacts",
+    "runs",
+]
+
+[tool.ruff.lint]
+select = ["F", "B"]
+ignore = [
+    "E501",
+]

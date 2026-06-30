@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "World Cellular Automata"
+message: "If you use this code, please cite the World Cellular Automata technical report."
+type: software
+authors:
+  - family-names: "WCA Authors"
+version: "0.1.0"
+repository-code: "https://github.com/LibertychaserUS/world-cellular-automata"
+license: MIT

@@ -1,0 +1,992 @@
+{
+  "file_count": 196,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "2e81840f6ec9a8afb829de53b91cc750705f57560b0e8ac0019bb6ae175553bd",
+      "size": 581
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "77b458e4db4241fd9c9c8065dd1e79830305d863084e950fd03f1f358c6dcc2b",
+      "size": 6659
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "1f36c310724637e900c7620547173210d656118030e369f7b3da35e9021d439d",
+      "size": 307
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "126dbdc0d589791ca67f59a1b78c8e8262d893c2585a4354ba775ab733eaa92b",
+      "size": 1068
+    },
+    {
+      "path": "README.md",
+      "sha256": "5cfda0eefd3cd1a0f94dab5051b2bc8ba628962c468dfb9a62a2c7c39325b2fa",
+      "size": 1953
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "sha256": "71402446c93646963cb837e041b3fba54148734e367e76b7f6bb9b480e90e8c2",
+      "size": 699
+    },
+    {
+      "path": "SECURITY_AND_PRIVACY.md",
+      "sha256": "368e33ac0fea3d79979c7d92c99c980f300b41a44544652b2533af7e9acdcc84",
+      "size": 315
+    },
+    {
+      "path": "configs/control/README.md",
+      "sha256": "e4ada4fe75c85bcd5bf546f24e00f9f9aa16541d23b34d9210129b5b5bfa37c8",
+      "size": 1902
+    },
+    {
+      "path": "configs/experiments/field_synthetic_heat_smoke.yaml",
+      "sha256": "532f23bc690509320a217fce19a4ea07965038c6ff531d429a8f39871b950118",
+      "size": 468
+    },
+    {
+      "path": "configs/experiments/smoke_cpu.yaml",
+      "sha256": "26abdbeeb13cc6f250a142582f8c539d22f0c0fa4d22ad4bc6e9f8d6fe21d2cb",
+      "size": 466
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_baseline_fno_large_mixed_seed15001.yaml",
+      "sha256": "f87e27425b947363048cf7ded33b2f2c40fcf09eaaff54945bf801e84cd10787",
+      "size": 1015
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_baseline_fno_large_mixed_seed15002.yaml",
+      "sha256": "80b1b3cdfabc509519a10178688d79d81dbfcb05afbf09539583d5b1670b608a",
+      "size": 1015
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_baseline_unet_large_mixed_seed15001.yaml",
+      "sha256": "d68cb6f3aadf1dbcdc7b714ecfb36623682b33dfa968078de20eae0a49612f13",
+      "size": 1003
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_baseline_unet_large_mixed_seed15002.yaml",
+      "sha256": "5dd3afd64a4a182e0a83eec277ea5430e3b82e3ce3c9dad24b9104fc088b0a2a",
+      "size": 1003
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_wca_mixed_d128_o10_i2_seed15001.yaml",
+      "sha256": "da5f6501eb6cebdbf7aa60a5966cb7529e009adf46a019e687932bb3d30cc3d8",
+      "size": 1081
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_wca_mixed_d128_o10_i2_seed15002.yaml",
+      "sha256": "14980bd9ee0ff95ca8340a2a001d1ff5233e0223796f0ae5286d5562822512ae",
+      "size": 1081
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_wca_mixed_d128_o12_i2_seed15001.yaml",
+      "sha256": "db4554e3f903dafbe909fd54c5963b80f4d8701581ed7426e11151c7a020cdfd",
+      "size": 1081
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_wca_mixed_d128_o12_i2_seed15002.yaml",
+      "sha256": "519b0ccbcfac9c1e6da97991ab7e294498ec4a660835061bffb52eed4205d1c3",
+      "size": 1081
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_wca_mixed_d128_o4_i2_seed15001.yaml",
+      "sha256": "3d9ad2dd17701e3cbe103a65d43dee021cef48e5b9e3dab3c74bf89642b9506d",
+      "size": 1079
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_wca_mixed_d128_o4_i2_seed15002.yaml",
+      "sha256": "094357a33a55670cf6576c844eff152a56d45cd8bd0702da5199e0d19d6508e9",
+      "size": 1079
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_wca_mixed_d128_o6_i2_seed15001.yaml",
+      "sha256": "e36db0e9d3e3397c9ac4066ffa92a8b94e5d8ffa8c0af9a56e30ffff303d0099",
+      "size": 1079
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_wca_mixed_d128_o6_i2_seed15002.yaml",
+      "sha256": "bf7c21528b4f35eb3ac7966f3694519feef997e9f1da4a8ad68b41b27fab8d6a",
+      "size": 1079
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_wca_mixed_d128_o8_i2_seed15001.yaml",
+      "sha256": "cb4b5e3d24b8850cb8be6674bc5304372f5e279d24a3eced0ae4ffc1d811911e",
+      "size": 1079
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25_wca_mixed_d128_o8_i2_seed15002.yaml",
+      "sha256": "11701df03feed8907921372d48db9978a228be8ce7366d7125ccbff0a918c340",
+      "size": 1079
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25b_wca_convstem_d128_o10_i2_seed15101.yaml",
+      "sha256": "ba1d71d8b67d2aab5d2ea057e2bb9e98ebbeddd3915ff74d56493d55ceb249cf",
+      "size": 1221
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25b_wca_convstem_d128_o10_i2_seed15102.yaml",
+      "sha256": "331e88a2751e1c889a15b6e6b6d7a5495bfb05341753285b4af9033c03b43891",
+      "size": 1221
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25b_wca_mlpstem_d128_o10_i2_seed15101.yaml",
+      "sha256": "8f88b98789a2ac24a498682864082aa1f2bd5520f6a674d9aef5a2e7d57e8af2",
+      "size": 1220
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25b_wca_mlpstem_d128_o10_i2_seed15102.yaml",
+      "sha256": "ea9e44430e6439f19bfea7dcfeed7f64adeda8bc2f4c0f598557db9db9c4d351",
+      "size": 1220
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25c_wca_mlpstem_outer0_d128_o0_i2_seed15201.yaml",
+      "sha256": "7a5121eed6899c6943eb8ebf03d7ee9519368b337a664164c553e6215e71a4d9",
+      "size": 1253
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25c_wca_mlpstem_outer0_d128_o0_i2_seed15202.yaml",
+      "sha256": "5d7b564960a9f168fce1ebd2c71bd92b0904ae7dfb728476ec6cb64631c464f3",
+      "size": 1253
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25c_wca_mlpstem_tokenizer_only_d128_o10_i2_seed15201.yaml",
+      "sha256": "3c5042d7196e1938884f65e424e1e95d8887d8c035f1ad961650da407a283cea",
+      "size": 1262
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25c_wca_mlpstem_tokenizer_only_d128_o10_i2_seed15202.yaml",
+      "sha256": "628efa6a7de60147a2316df87fecc79245fcea04d67fe914e305e1181c919dc2",
+      "size": 1262
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25e_token_conv_d128_seed15301.yaml",
+      "sha256": "498ade0919498759dbeb86532c07a7c86bfb8217b4ec41e3bb15533aeb72568a",
+      "size": 1179
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25e_token_conv_d128_seed15302.yaml",
+      "sha256": "f1474437a46e39d436282173dbb8420a3b9e6381e569ab113a95f74f6be2f881",
+      "size": 1179
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25e_token_mlp_d128_seed15301.yaml",
+      "sha256": "4f8aadbd148e303fbc903eefefae383281ff370745baf814c2168187ada18766",
+      "size": 1177
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25e_token_mlp_d128_seed15302.yaml",
+      "sha256": "76398d7f17ac4081027a1b42efdbd2bc887cf4d4edb744bdd9739922f1e372ae",
+      "size": 1177
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25e_wca_mlpstem_decoder128_d128_o10_i2_seed15401.yaml",
+      "sha256": "5a1e98f265862ec1bf62b56188e237b1998c9dae21837b007f16ac76e8faca1f",
+      "size": 1260
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25e_wca_mlpstem_decoder128_d128_o10_i2_seed15402.yaml",
+      "sha256": "0378b7e788723d458a2c5fcf946966b34a6fda2f475e064d1202b10134ef0478",
+      "size": 1260
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25e_wca_mlpstem_decoder16_d128_o10_i2_seed15401.yaml",
+      "sha256": "63cab2ade7d7bfe07f32c540ab0809894effc1a633dcea06397b202844abdd12",
+      "size": 1258
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v25e_wca_mlpstem_decoder16_d128_o10_i2_seed15402.yaml",
+      "sha256": "f01ca6cc795ec4e80c8e799d9fccad6541f3704ae7f6d1fb8c937e57cd557e02",
+      "size": 1258
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v26c_wca_patchmean_n256_d128_o1_i1_seed16101.yaml",
+      "sha256": "aabb6ea6fefe23f4491d63c20654932ac5140374b9f2d9e68c0c52859a986bba",
+      "size": 1120
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v26c_wca_patchmean_n256_d64_o2_i2_actckpt_seed16101.yaml",
+      "sha256": "c713b0425ae2ebed9d5ab9577bee7ddb0cf22df30f45fd73516b2da4d181457e",
+      "size": 1125
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v26c_wca_patchmean_n256_d96_o2_i1_actckpt_seed16101.yaml",
+      "sha256": "fe7d6c6661c6456eabfb462aa758edaf0e92d4604b6ecf6893bcfa61932ecf6d",
+      "size": 1125
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v27_fno_raw_anchor_n256_seed16201.yaml",
+      "sha256": "6b8d8e6fbee269666ed64272571051c98ff7fd6d62ec2d4fd72ac999e61b92f0",
+      "size": 1123
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v27_fno_raw_anchor_n256_seed16202.yaml",
+      "sha256": "af8b386db8ad107814f1bc0c14d0b146b64bc652503e0a9cb64cdc784bf4f5ab",
+      "size": 1123
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v27_token_conv_n256_d128_seed16201.yaml",
+      "sha256": "768b583961abb6ff9c8c8512f330633bb4897148e3baa4a4deebce7a4c0472aa",
+      "size": 1118
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v27_token_conv_n256_d128_seed16202.yaml",
+      "sha256": "973c3d671af01aa41d61e2300c053a30de72331c2791de40b2d43f0c2a50796f",
+      "size": 1118
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v27_token_mlp_n256_d128_seed16201.yaml",
+      "sha256": "a17ffe6a2fc8473c7e56e6d9e1b3632a861268e86f74007fc5ec0c6834170870",
+      "size": 1116
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v27_token_mlp_n256_d128_seed16202.yaml",
+      "sha256": "8a20f5ce974b858c0564fb8cb99ec2ded708af37bfc3780139bd507281daca03",
+      "size": 1116
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v27_unet_raw_anchor_n256_seed16201.yaml",
+      "sha256": "406c12fbf0dde6fe5779c7fdd73e13e106199acada12360cd709e68ec8c6382e",
+      "size": 1111
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v27_unet_raw_anchor_n256_seed16202.yaml",
+      "sha256": "01c6a737eac1ca563a50c3e3477589a08d2db441892eaa406bb9226347503c03",
+      "size": 1111
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_convstem_n256_fullcore_d128_o10_i2_seed16301.yaml",
+      "sha256": "6c18bced010ca7659a432fbf432fbbd6738165a5a3a14c445651959c53a7e340",
+      "size": 1261
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_convstem_n256_fullcore_d128_o10_i2_seed16302.yaml",
+      "sha256": "ee59ac8cf4505880beef5f4f4f385478c82c2ae47c27e8951ba77cbfada82876",
+      "size": 1261
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_convstem_n256_fullcore_matched_d64_d64_o2_i2_seed16401.yaml",
+      "sha256": "36e482793a3c834918070ff62ea5b0e72adeca7cd5c30977c08de5aec3e8391d",
+      "size": 1303
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_convstem_n256_fullcore_matched_d64_d64_o2_i2_seed16402.yaml",
+      "sha256": "b5d39f93073ab4d24fa3bfdd0e7cd7446d8bb48dace948b39a43ed9b7d74c1a5",
+      "size": 1303
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_convstem_n256_fullcore_matched_d96_d96_o2_i1_seed16401.yaml",
+      "sha256": "935bc3ebda4393f45c542c1347e8aa39465b79853f5239175d97e7997ba73468",
+      "size": 1303
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_convstem_n256_fullcore_matched_d96_d96_o2_i1_seed16402.yaml",
+      "sha256": "03ffc1e6086a8743d43f3b2e0cff3c265ccec7fda893ae30635b6d11b12a76a8",
+      "size": 1303
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_convstem_n256_outer0_d128_o0_i2_seed16301.yaml",
+      "sha256": "97799904be48ac0f0ed2617d39fc7df2e9f50f53e0c6387d60930c56569f8750",
+      "size": 1257
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_convstem_n256_outer0_matched_d96_d96_o0_i1_seed16401.yaml",
+      "sha256": "438ae28c71c35317eda60888116d7efe453478fcfb44e356abacddfd4b9e20d0",
+      "size": 1301
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_convstem_n256_tokenizeronly_d128_o10_i2_seed16301.yaml",
+      "sha256": "caad02a3e6ce49231d5db5578ca5459c762107a7107c977ca48ec0cb3ff3e3d3",
+      "size": 1265
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_convstem_n256_tokenizeronly_matched_d96_d96_o2_i1_seed16401.yaml",
+      "sha256": "763597a4c0bc6362322eb02251b867cd9091bf95bccf9a9d54996b31f276a3c6",
+      "size": 1307
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_mlpstem_n256_fullcore_d128_o10_i2_seed16301.yaml",
+      "sha256": "6baff8bcf5175e83e1f9c7ca75ddfd1024fcc98f2a1839268a5e421194ee6561",
+      "size": 1259
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_mlpstem_n256_fullcore_d128_o10_i2_seed16302.yaml",
+      "sha256": "c3cfe6413a80c6061c57a6e1de2995d2f648a9198d63095f013b9f6c362c57bf",
+      "size": 1259
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_mlpstem_n256_fullcore_matched_d64_d64_o2_i2_seed16401.yaml",
+      "sha256": "c7791f614e168fb5bb37da01a9c5452ad76af8c2a79ae5bee891ff9e562a3158",
+      "size": 1301
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_mlpstem_n256_fullcore_matched_d64_d64_o2_i2_seed16402.yaml",
+      "sha256": "ea1df218c67b1e2d1ea42009312e708758fd17457ebc10e1fb497713209bbe57",
+      "size": 1301
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_mlpstem_n256_fullcore_matched_d96_d96_o2_i1_seed16401.yaml",
+      "sha256": "c5b8647ea6b6404b2e09e8f2271afa510d26f8435958d910896f2d3e7ab2bf6a",
+      "size": 1301
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_mlpstem_n256_fullcore_matched_d96_d96_o2_i1_seed16402.yaml",
+      "sha256": "8571295124fc3e3e9898bbd934fc5312ac0c4fbead0e31cef09cba1fbb01930d",
+      "size": 1301
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_mlpstem_n256_outer0_d128_o0_i2_seed16301.yaml",
+      "sha256": "638cad5ab413c45c7b26ef875a5ab6ac54469ff13436af0ffd62c49835d6085a",
+      "size": 1255
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_mlpstem_n256_outer0_matched_d96_d96_o0_i1_seed16401.yaml",
+      "sha256": "0114b13515e22ab779dd84a69139859899e9a64e86db8f5dc9439f44ad8bf6e3",
+      "size": 1299
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_mlpstem_n256_tokenizeronly_d128_o10_i2_seed16301.yaml",
+      "sha256": "90762ce26983cd6dddf130621deec99fe94c9aeceb3b0aba5b876fdf55cd2b27",
+      "size": 1263
+    },
+    {
+      "path": "configs/experiments/westb_pdebench_v28_wca_mlpstem_n256_tokenizeronly_matched_d96_d96_o2_i1_seed16401.yaml",
+      "sha256": "16e492fef57e62e2b5b02ad36142398a4806b31b1ee28a928b80065ba5f60377",
+      "size": 1305
+    },
+    {
+      "path": "docs/00_project_overview.md",
+      "sha256": "b045d6c38d4ff62473d2321e5768857082d2dae7a5502684051b90e3babbf131",
+      "size": 808
+    },
+    {
+      "path": "docs/02_architecture.md",
+      "sha256": "59b9a503b3c3a20178b7abc74a0169c6e819b9b4a7faf38d158cc94a348b574b",
+      "size": 899
+    },
+    {
+      "path": "docs/100_v28_interface_attribution_plan.md",
+      "sha256": "5ac23774f63ecadfcfa20788048233e1da99d1cf535c71f8c0050a32ea17a922",
+      "size": 6166
+    },
+    {
+      "path": "docs/101_unified_physical_latent_design.md",
+      "sha256": "fdfa216e24114fe117efe6db1a3b397661c12e134c9ae8d03434340e9db60bcb",
+      "size": 6534
+    },
+    {
+      "path": "docs/102_open_source_release_and_versioning.md",
+      "sha256": "b0f8445deba6c489972901491ac2aad67746eab77a25216cca5bf6037ffdda00",
+      "size": 7144
+    },
+    {
+      "path": "docs/34_strict_experiment_route_and_dense_to_sparse_plan.md",
+      "sha256": "87cbfb53ea9a5720279528cdfe97cb8ed065f64675e1b80f4fd9f847a44e2e4a",
+      "size": 8049
+    },
+    {
+      "path": "docs/60_wca_experiment_constitution_and_macro_plan.md",
+      "sha256": "394327f74042fe08aa0c06ae6d7c36f09fcf40e2d0641f6891454d7637143d71",
+      "size": 14157
+    },
+    {
+      "path": "docs/77_wca_macro_architecture_and_algorithm_validity_criteria.md",
+      "sha256": "6cca76f9cd3df9201fa80b281109a6678ea4a7a061e4dafa58011feaa9ea085e",
+      "size": 9662
+    },
+    {
+      "path": "docs/80_loop_engineering_operating_system.md",
+      "sha256": "4bf4133e397266348bdf26dcd2af7f62ec47bb3bdbf5c1011e0c04764048e833",
+      "size": 15925
+    },
+    {
+      "path": "docs/90_evidence_tree_operating_memo.md",
+      "sha256": "21be50591c0e512ac8476a2bfe109af0789314a2772059a5028e2f23fdd1f2fe",
+      "size": 5208
+    },
+    {
+      "path": "docs/94_eval_attribution_and_anti_cheat_protocol.md",
+      "sha256": "bbea4c1de0a587a0f0131ea34f4de182f7811910c7b1ca97233100e5f696b10b",
+      "size": 14652
+    },
+    {
+      "path": "docs/98_strict_experiment_manifest_template.md",
+      "sha256": "1c74f049914457639217492e216f0dc60dbd45ce9f99314e65d4f302cf66a5ee",
+      "size": 7923
+    },
+    {
+      "path": "native/wca_kernels/include/wca_kernels/dense_pair_reduce.hpp",
+      "sha256": "f0d2ad1c1c05a59f9b79f0c4f6804dc972390844d2fafb5066eed753cfc3b15d",
+      "size": 500
+    },
+    {
+      "path": "native/wca_kernels/include/wca_kernels/tensor_view.hpp",
+      "sha256": "26704dfa6acc45787b4db053aacda56bae02572648c2ae4b49d19c4564aacfc2",
+      "size": 2452
+    },
+    {
+      "path": "native/wca_kernels/src/dense_pair_reduce.cpp",
+      "sha256": "8f723d96a8992e1c0d410563360c4260986b79a5fcc2d09550255a2f277ba344",
+      "size": 4411
+    },
+    {
+      "path": "native/wca_kernels/tools/dense_pair_reduce_mock_cli.cpp",
+      "sha256": "af2408db6469e8c0ddad68653201b46740b5ba3b87270b98c51f6844312fa62f",
+      "size": 5697
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "e2fbd625309d0a50fd454aa3ccc8a5417f68d449389eeeec787c1c734de90972",
+      "size": 915
+    },
+    {
+      "path": "requirements-real-data.txt",
+      "sha256": "c3d8e73ccd77fdcc29dd1741ce93b28e3af26fa3de0c7119de53580b211361c1",
+      "size": 74
+    },
+    {
+      "path": "requirements-viz.txt",
+      "sha256": "7178c080a0db854f72e1430e46f3b4b25ae58cfc6c89ce3f83267e0660f6f91f",
+      "size": 19
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "7c4898b8ead31a10da69be9b073f1936ae0073b68b3ea5c83bf9ba92fd51b900",
+      "size": 24
+    },
+    {
+      "path": "scripts/analyze_maze_paths.py",
+      "sha256": "8ef4c8b4c5b557d058210402de7c679eb3e9d6c68525f1ce55cacf2e17176e86",
+      "size": 5056
+    },
+    {
+      "path": "scripts/ast_guard.py",
+      "sha256": "fdde5d61b83e4fae3f57f9048b18d1486f70a6bc3e59e1534908b1cb0a52d8a9",
+      "size": 8494
+    },
+    {
+      "path": "scripts/audit_model_ladder.py",
+      "sha256": "48a652f18c31e6a9cb047593fdb25011c3cde0ed0e6cd71514c3ab7ea0443077",
+      "size": 17547
+    },
+    {
+      "path": "scripts/audit_pdebench_dataset.py",
+      "sha256": "e6f1f671b4114dc95be836ee46af4933182fa09f1d2e8339e3edd2966f9ad795",
+      "size": 657
+    },
+    {
+      "path": "scripts/build_open_source_export.py",
+      "sha256": "5704c52efdb4bb09c09d6e00fd951346afa12e25e4e58b4574e9f423b78f05ac",
+      "size": 13317
+    },
+    {
+      "path": "scripts/build_paper_figures.py",
+      "sha256": "d3a9527f9ca1dacc460f199f2a05fa57105fc04efa90463b6a28bc8125b932af",
+      "size": 23687
+    },
+    {
+      "path": "scripts/build_paper_statistical_tables.py",
+      "sha256": "f8d445bed276160373deead1e89eada5b6ae3a4731541ada20fc0a139ebdd41d",
+      "size": 40412
+    },
+    {
+      "path": "scripts/check_dense_native_mock_equivalence.py",
+      "sha256": "2647f35a00a1a71364dbdd33d1cf203a63a102a032f38b46010f351d6abd91b4",
+      "size": 13139
+    },
+    {
+      "path": "scripts/eval_field_h8_rollout_twice.py",
+      "sha256": "98e305a1aff2114ef8faf5089a28e7180e422f2fd9647f95ce4c01360228673f",
+      "size": 26818
+    },
+    {
+      "path": "scripts/eval_field_horizon_stratified.py",
+      "sha256": "f1b8837bb9de1d9940641823b4b4304b449c661a1b59f1192fc6538fec0382ec",
+      "size": 33096
+    },
+    {
+      "path": "scripts/eval_field_sentinels.py",
+      "sha256": "ceaa1e5b6bcdcec5e913ac64115fa821d0fe46def8d5ba2647482d0abac1dc0e",
+      "size": 23572
+    },
+    {
+      "path": "scripts/eval_maze.py",
+      "sha256": "90cbc3bdab8cda128b6bd1708a9cad5b3d2c7643b9a394d5d4571ebe90543624",
+      "size": 2341
+    },
+    {
+      "path": "scripts/eval_weatherbench_baseline_horizons.py",
+      "sha256": "588053f32fee900fd392a7c3eb2af321e7b54899aba3da22d87e121f9bbe64ec",
+      "size": 24326
+    },
+    {
+      "path": "scripts/eval_weatherbench_horizons.py",
+      "sha256": "61df6d979f54234626000bb3b64d34f0d70cc11821cc6c5b135af212be462bd9",
+      "size": 20728
+    },
+    {
+      "path": "scripts/field_eval_plan.py",
+      "sha256": "ea32d9586ef4f73b4753d9e8cc951a09bd37cfc5021e0706f36ab3b61936b004",
+      "size": 5100
+    },
+    {
+      "path": "scripts/gate_experiment_results.py",
+      "sha256": "322ac3bc6d1549ff2e9620a80b54f860856364f18a41d15dbf4b8c59dcae5004",
+      "size": 3056
+    },
+    {
+      "path": "scripts/generate_maze_pool.py",
+      "sha256": "8332b506ebfdcf696b6b04659b686e7832bef1bb033c783bd29e2e03769f5d0b",
+      "size": 1014
+    },
+    {
+      "path": "scripts/generate_pdebench_cache.py",
+      "sha256": "84b7ba2e19507000d8d72eb38b92feffcefc928c6e4612e431580febce9d7be9",
+      "size": 1694
+    },
+    {
+      "path": "scripts/profile_model.py",
+      "sha256": "ea9743df0268a929a231841e9229778de1ae5af7a8772ff78e48626b145b4802",
+      "size": 12970
+    },
+    {
+      "path": "scripts/report_v20_pdebench.py",
+      "sha256": "c5ada9f563e3f4cd164e4ef5e5e0120d68241a4bd17afaec5ae5de72c3087e6d",
+      "size": 30398
+    },
+    {
+      "path": "scripts/train_field.py",
+      "sha256": "d9f4e7f7066613336e5d9d3fff13f908a86cdcd9c45c716a57e6985a5b926b99",
+      "size": 863
+    },
+    {
+      "path": "scripts/train_field_baseline.py",
+      "sha256": "5185e859a04bc8a4966c95ef2daedf5097afaa9a6eebc69387564849741dea35",
+      "size": 22199
+    },
+    {
+      "path": "scripts/train_field_token_baseline.py",
+      "sha256": "34af5f507468f2262b0ac904b2e995bcebea03eae9104506cbd5335dbb6c94d1",
+      "size": 19903
+    },
+    {
+      "path": "scripts/train_maze.py",
+      "sha256": "a2c729a95404e76aec2ebd6e319fe7fc18d79f4cd1fafd15c450cd3cac350592",
+      "size": 770
+    },
+    {
+      "path": "scripts/wca_plan_slots.py",
+      "sha256": "af970e5dcc34eb5b8220050214912343287d8558bd8af479d8d62bd558a3c9c7",
+      "size": 4212
+    },
+    {
+      "path": "src/wca/__init__.py",
+      "sha256": "59f2f638f344b6cd1f85d46ccdc2469aabcf2abd52cd31ef7f6d721ae49fdde6",
+      "size": 98
+    },
+    {
+      "path": "src/wca/config.py",
+      "sha256": "ecd1ed71a683d5c57f8efd4f9aa1296e4759bce676174a22c87a32c40f266998",
+      "size": 15682
+    },
+    {
+      "path": "src/wca/constants.py",
+      "sha256": "ebeda6f87928022c13ab3ab7ccb9317c23d3da9582155d9cd7985fba893720ce",
+      "size": 213
+    },
+    {
+      "path": "src/wca/data/__init__.py",
+      "sha256": "fc8c3264b28b7db4690c91b866a16ca4df64ea90d7a9200056b77da23de9c927",
+      "size": 36
+    },
+    {
+      "path": "src/wca/data/batch.py",
+      "sha256": "1d3d451fccdcfe72c89233634378dfa5516d42d4e7c04c2e763662c82cb16f0a",
+      "size": 2579
+    },
+    {
+      "path": "src/wca/data/field/__init__.py",
+      "sha256": "81c969246b11406a391c40e4b0a927308e6f039e1def0f36342f48a6fabaa80a",
+      "size": 57
+    },
+    {
+      "path": "src/wca/data/field/hf_catalog.py",
+      "sha256": "f34540469fbbcb92290f940894796235715b5f0fd2f899c15014d8fcf1e53575",
+      "size": 11332
+    },
+    {
+      "path": "src/wca/data/field/pdebench_audit.py",
+      "sha256": "ded126116227a67e3b258c23b853b8aba0078ecc6c29c380ddde0db3db0efcf5",
+      "size": 1122
+    },
+    {
+      "path": "src/wca/data/field/pdebench_cache.py",
+      "sha256": "1497aefa22a075f92afb6aef48c3a7850c4c30e0b3aaab0a5167df269ead9d06",
+      "size": 10336
+    },
+    {
+      "path": "src/wca/data/field/pdebench_source.py",
+      "sha256": "672090c2767f3d9ec06248cc0f38e5eda4bda3acea0f203aee5dbf6c744108d9",
+      "size": 1151
+    },
+    {
+      "path": "src/wca/data/field/real_cache.py",
+      "sha256": "7e4399bacbb45ccdc53df28f4fe13c1a0f0024704441e9dd0a9dcb225272521e",
+      "size": 16747
+    },
+    {
+      "path": "src/wca/data/field/synthetic.py",
+      "sha256": "6a07a9e9770b3a52879e146b49e6a145b116391bdfd46394f79380f5d68ad838",
+      "size": 15386
+    },
+    {
+      "path": "src/wca/data/maze/__init__.py",
+      "sha256": "736f32116e6e95bf7344532b678d1122f00062b2c2cb6afac9bb789714ffd3e1",
+      "size": 48
+    },
+    {
+      "path": "src/wca/data/maze/batch.py",
+      "sha256": "b7ac0100407cf1ecd24ac20d05a49ebc87804333fb0aa06ca1bed7fb7ccce004",
+      "size": 4642
+    },
+    {
+      "path": "src/wca/data/maze/forensics.py",
+      "sha256": "70594d8e3a58a8059730649d439db3ddd6e3e79cdd21f403f2f6ee7b94928feb",
+      "size": 10447
+    },
+    {
+      "path": "src/wca/data/maze/generator.py",
+      "sha256": "2075b2082f2f5f41a69c2ec48bb12d6c306fb27c8f496251747e1efbb88c09a2",
+      "size": 6900
+    },
+    {
+      "path": "src/wca/data/maze/metrics.py",
+      "sha256": "1a95de194b270dfae25f32006a65a8b5f638bfdc4b2525350cace8bc8d65b031",
+      "size": 16299
+    },
+    {
+      "path": "src/wca/data/maze/oracle.py",
+      "sha256": "3ec8134df289194ec26fb1a700dfce9fba7639d1908c156b1ec1a90c931ce1a4",
+      "size": 3007
+    },
+    {
+      "path": "src/wca/data/maze/pools.py",
+      "sha256": "2dd87837b7a0ca7ee2f184ddd4c696db8e9ceaaab9efa386af5f2fc5621811e8",
+      "size": 6585
+    },
+    {
+      "path": "src/wca/experiments/__init__.py",
+      "sha256": "98fe6577e8f4a072cd62901f37bc6ed279deed16442dcaecdb01a4496b55521e",
+      "size": 48
+    },
+    {
+      "path": "src/wca/experiments/analyze_run.py",
+      "sha256": "abd7c226718886a7d79ec7ffde713a39f7f21be4e2806e34d296b62a0dd5bda3",
+      "size": 914
+    },
+    {
+      "path": "src/wca/experiments/registry.py",
+      "sha256": "249ec186d7966675fe9ccb8ba29c6383aab52f04294bb8d7a56623441b60b7a5",
+      "size": 690
+    },
+    {
+      "path": "src/wca/experiments/resource_planner.py",
+      "sha256": "f2e8a4d4241a7d92e706d32759cb0908211262fe98ddcfdb0443d183d45b085c",
+      "size": 14440
+    },
+    {
+      "path": "src/wca/experiments/run_ablation.py",
+      "sha256": "302c8213358985b0dca148c6ec22e73cd478a864bc5709c54920faaaf7099842",
+      "size": 384
+    },
+    {
+      "path": "src/wca/experiments/run_maze.py",
+      "sha256": "93bd6af4982d256d859be2deab7b705f0a9f1b659d92d74a120655feb129314e",
+      "size": 227
+    },
+    {
+      "path": "src/wca/models/__init__.py",
+      "sha256": "9c5fd655316287deed7d70ea5a3872e37da691c5dde6e851041b1e7ef6d9c526",
+      "size": 172
+    },
+    {
+      "path": "src/wca/models/diagnostics.py",
+      "sha256": "ef836c3fc3d35474840ce847e2cbd3555c00c4d65b5e8d634a17ce7c8fdd3101",
+      "size": 1523
+    },
+    {
+      "path": "src/wca/models/field_tokenizers.py",
+      "sha256": "364fb23321744e5ad36d590bd1f8ff0b28224bf792dc5c35cf4d333171338057",
+      "size": 6281
+    },
+    {
+      "path": "src/wca/models/field_wca.py",
+      "sha256": "59aa9b0b7dce7b4664efcee23e3ab69d5ac609d5d02e7eb0d309dc659d84b8f9",
+      "size": 9656
+    },
+    {
+      "path": "src/wca/models/kernels.py",
+      "sha256": "a0679452816ed91760ee9baf6381b32e5389e60beb1a980e8698adf2135653b1",
+      "size": 997
+    },
+    {
+      "path": "src/wca/models/readouts.py",
+      "sha256": "c714d84872b426bcbe1677dbe8cd66d1ae4dcdbef2342f1f56bfc19b0a4a9ed7",
+      "size": 342
+    },
+    {
+      "path": "src/wca/models/rws_nca.py",
+      "sha256": "db916030a853dda21ef8bcbb50411a9dce5b9031cc5e782d79bcfe95b4396629",
+      "size": 9534
+    },
+    {
+      "path": "src/wca/models/variants/__init__.py",
+      "sha256": "6d2ee6d4f34b4460c2ff0e76e7c4d946311a2675857b62f3a9eb21a1af605ef4",
+      "size": 174
+    },
+    {
+      "path": "src/wca/models/variants/baseline.py",
+      "sha256": "160c5417f5848d0caf79da757e874884a8e3b25c0b6ed914e1d58b5aae05441e",
+      "size": 100
+    },
+    {
+      "path": "src/wca/models/variants/deepseek_v03.py",
+      "sha256": "27d41e737f75954d765452232dd01819453a371eed6533180d8615159424a031",
+      "size": 231
+    },
+    {
+      "path": "src/wca/models/variants/egocentric.py",
+      "sha256": "4586683b03a6b080286be3bf4db8a86f968dbd7d228900e14682d1809f4c8c77",
+      "size": 1154
+    },
+    {
+      "path": "src/wca/models/variants/predictive_feedback.py",
+      "sha256": "6562c23f9aebf3bfd33e7ca516ba54a7e664a14c959d83be5745f4af786e2b7b",
+      "size": 3040
+    },
+    {
+      "path": "src/wca/schemas.py",
+      "sha256": "2db190f8214ea14dcf5d513c55f5d65acbeefab901b05e2dd55c64e6cc1ace3a",
+      "size": 522
+    },
+    {
+      "path": "src/wca/training/__init__.py",
+      "sha256": "464a789b7e5835797189af15e21d3b92d37371d493fc731c5af8dc1642d7eeb6",
+      "size": 41
+    },
+    {
+      "path": "src/wca/training/checkpointing.py",
+      "sha256": "dc588dd1cc83c41ae93de1d18b31954af8f08300573a8d5ee52404496037e518",
+      "size": 5904
+    },
+    {
+      "path": "src/wca/training/evaluator.py",
+      "sha256": "b99967e4ac5f5a71750c153848fd7d37135fade8d84cd2e1239b866159431036",
+      "size": 9785
+    },
+    {
+      "path": "src/wca/training/losses.py",
+      "sha256": "b2a47db8aacfd72a1bbce660da2a5d3e6e3a10a19a0e6dcc1624d58f866d9ef2",
+      "size": 5071
+    },
+    {
+      "path": "src/wca/training/prediction.py",
+      "sha256": "e195674ba421522c8162396a22a85ebe5fb2b7f7cf8843c3a8cf5898f4b773ed",
+      "size": 1863
+    },
+    {
+      "path": "src/wca/training/reports.py",
+      "sha256": "8b0deb4f7acf3daf2ba2c6fbd13759a36284cb5573a1e837c027bddbfeec799b",
+      "size": 5968
+    },
+    {
+      "path": "src/wca/training/trainer.py",
+      "sha256": "24e1a9baae3ad951e83402b925d11ac98ebd4bdfd91a7cd55f3ef1cd4af81d2a",
+      "size": 22235
+    },
+    {
+      "path": "src/wca/utils/__init__.py",
+      "sha256": "73df804823aae5a4c3a0f35e5c62ead2821d3024488999ed137afdc99ade928f",
+      "size": 31
+    },
+    {
+      "path": "src/wca/utils/device.py",
+      "sha256": "9ea6ea0e5464fc9728061f8376ea55fff75dd5e7b47826af3b3fe680631eeb4a",
+      "size": 961
+    },
+    {
+      "path": "src/wca/utils/distributed.py",
+      "sha256": "9824ac0a9a91aca9119866663fb4d19cffdb87a0ac64d57ac1ebc9bfee0a94ee",
+      "size": 2528
+    },
+    {
+      "path": "src/wca/utils/precision.py",
+      "sha256": "0281a960a3636174dda81835be9fa3100372a44b11095adfa6f98957bb873de6",
+      "size": 1563
+    },
+    {
+      "path": "src/wca/utils/seed.py",
+      "sha256": "7e2aebef7755aea399da63222fdd25f0825bb3bfc34bd8b78611484bf3845b34",
+      "size": 186
+    },
+    {
+      "path": "tests/test_dense_native_mock_equivalence.py",
+      "sha256": "5f1297de8a2727be158015a2d536d3c950fa51371b67343fbb36b0aca04e95d9",
+      "size": 2157
+    },
+    {
+      "path": "tests/test_eval_field_sentinels.py",
+      "sha256": "98cdbe8b63fbb4845b3fad891675974dc8a6db6d49df4e7721bfe7a4d374f1b4",
+      "size": 8335
+    },
+    {
+      "path": "tests/test_field_horizon_stratified_eval.py",
+      "sha256": "c8d82505ba3fb509efae2acb700634a690e61b2d02baf5f3476222f858256f78",
+      "size": 14069
+    },
+    {
+      "path": "tests/test_field_metrics.py",
+      "sha256": "48d733c217736cbcd35a0bb0b496cd6f8cc8e0a6493031a9b6627cea63736bc9",
+      "size": 2653
+    },
+    {
+      "path": "tests/test_field_model_smoke.py",
+      "sha256": "6220785d910d29fc4748388f1d682bfd303029f8f18668c2528ccdd5e4340c3c",
+      "size": 3070
+    },
+    {
+      "path": "tests/test_field_tokenizers.py",
+      "sha256": "e1f962ea4b93c7d283c401ea091f0adf25afd18309cda871ed6df78990930b26",
+      "size": 6090
+    },
+    {
+      "path": "tests/test_maze_batch_schema.py",
+      "sha256": "4a54d79ddd6f47ac1e0e2fbc2fe01fc35b9efde3a690c420f12cec7a14e912d0",
+      "size": 1084
+    },
+    {
+      "path": "tests/test_model_shapes.py",
+      "sha256": "a7730bacb8db51af1693a344e870320630195bdaf72234c6ceb4e89f9acfa560",
+      "size": 1444
+    },
+    {
+      "path": "tests/test_no_label_leakage.py",
+      "sha256": "a5f18bfc27667084e9708446ccd02a825874bb33e6d788038c410d3e82a0ab6c",
+      "size": 473
+    },
+    {
+      "path": "tools/wca-exp-control-ts/README.md",
+      "sha256": "3bf8b05febba0683f7da1213e71c5ccd0ba1f9e21cf148388be567879c6a1498",
+      "size": 13934
+    },
+    {
+      "path": "tools/wca-exp-control-ts/package.json",
+      "sha256": "74ae1252651b04149c2fe8678530362545894b051af91b7b31112d77f812462d",
+      "size": 1901
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/cli.ts",
+      "sha256": "ff310ce1db4904eefb85ef0dd1cfa482335d67117ff8c4ef673c9ca319740900",
+      "size": 16360
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/contracts.ts",
+      "sha256": "6142d35c434cba86fd6d4e5be5248cb3595ee6a61d3244d9d66f229a2e754c1a",
+      "size": 24791
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/fetch_package.ts",
+      "sha256": "60f8923611e09bcd277204ad6a66f53f9e00a545d2516877c0aa1e60bd4589b2",
+      "size": 11996
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/inventory.ts",
+      "sha256": "9605c2159fbc19d83994a48d01a7e1af7ce15156d6ff2e6be64cfd7d29805b33",
+      "size": 13275
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/kernel_equivalence.ts",
+      "sha256": "0be8a07bcd58ac75c28cea5af1e3fca0eb34c7984e439b5affc0f0b4d5b10bdb",
+      "size": 15580
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/lease_store.ts",
+      "sha256": "b2cf3db2db1858a3c8f02f3ac2c36e99b9e632efc006d3069f4c4706ee75aaf6",
+      "size": 11335
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/leases.ts",
+      "sha256": "d75920c98cf7daa939da24b2e2c6bd45c916fa26b70976ef93dbfa5296ac9aca",
+      "size": 6432
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/manifest.ts",
+      "sha256": "2ee0a4ebd35510d34c4cf8b9417b157ebb3065b42df51cb3f5d052fc1c391344",
+      "size": 12917
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/mock_active_control.ts",
+      "sha256": "eef0ca472e72ecd71205896ff8146a8dd976e548f11bc045fe99d3685e5d6b31",
+      "size": 10853
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/parity.ts",
+      "sha256": "cd5dfa543bf77abaaf0260e9c59cd4691919d982e0505b21f231825605c284a7",
+      "size": 26254
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/planner.ts",
+      "sha256": "b415d851439240d64210ff36a7e19777362b3bd9db6bce204d9a4b2d8f09ab5f",
+      "size": 40562
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/planner_compare.ts",
+      "sha256": "673d66078406b954d2345afe4ac81bee6966302bd60acbe5548241f1dc59fcf5",
+      "size": 3693
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/profile_extract.ts",
+      "sha256": "236ad710b17b48d68f67aae461ad20b9c72dba3dc7cd9ad6ac4542ab68f44a82",
+      "size": 13061
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/profiles.ts",
+      "sha256": "37169a0f8ba417e586493768f2c39dacd4c3a4a5505175bcba6ee8df2c1e30e6",
+      "size": 14783
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/queue_status.ts",
+      "sha256": "b1f337e49f2f12600793640f1e60247da816af954fa7d3238d82d60c78695966",
+      "size": 8239
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/readiness.ts",
+      "sha256": "3b234b1d66650c69f310d8f8c4ad6e7af2e0cea27f4ddfd7aaba2c27745520f5",
+      "size": 16374
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/remote_status_snapshot.ts",
+      "sha256": "cfb2aa0395e07a11e82adeb88a6e6728aac5c726f27c70f1eba52ff47602ed94",
+      "size": 10075
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/report.ts",
+      "sha256": "1f62d27210b3aa019b5a4bfa0ba99221445f081cf3315657f7200b436725b094",
+      "size": 2547
+    },
+    {
+      "path": "tools/wca-exp-control-ts/src/shadow_paths.ts",
+      "sha256": "a77a299980424a987025b380f70065dad7bab424a952fd82b18cef5d77877b37",
+      "size": 3373
+    }
+  ],
+  "generated_at": "2026-06-30T22:35:11.911287+00:00",
+  "policy": "allowlist_export_no_raw_artifacts",
+  "schema": "world-cellular-automata.release_manifest.v1",
+  "source": {
+    "kind": "curated_export",
+    "note": "Generated from a local working tree; private source paths are intentionally omitted."
+  }
+}
