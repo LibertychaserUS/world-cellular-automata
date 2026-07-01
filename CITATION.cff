@@ -6,4 +6,6 @@ authors:
   - family-names: "WCA Authors"
 version: "0.1.0"
 repository-code: "https://github.com/LibertychaserUS/world-cellular-automata"
+doi: "10.5281/zenodo.21085154"
+url: "https://zenodo.org/records/21085154"
 license: MIT

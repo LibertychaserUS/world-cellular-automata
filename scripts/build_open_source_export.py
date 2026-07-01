@@ -229,9 +229,8 @@ H_t [B,N,D] -> L_t [B,N,N,D] -> local-world pair evolution -> H_{t+1} [B,N,D]
 - Hugging Face report/artifact mirror:
   <https://huggingface.co/datasets/Chaser111/world-cellular-automata-technical-report>
 - Zenodo archive / DOI:
-  pending. The report repository contains `wca_technical_report_v0.1_release.zip`
-  and `zenodo_metadata.json`; use those files to mint the archival DOI, then
-  replace this line with the final Zenodo record URL.
+  <https://doi.org/10.5281/zenodo.21085154>
+  Record page: <https://zenodo.org/records/21085154>
 
 ## What This Repository Does Not Contain
 
@@ -358,10 +357,10 @@ manifest.
 
 ## Archive And DOI
 
-For archival citation, use the technical-report release package and
-`zenodo_metadata.json` in the report repository to create the Zenodo record.
-After Zenodo mints the DOI, add the DOI badge and record URL to this README,
-the report README, and the Hugging Face dataset card.
+For archival citation, use the Zenodo DOI
+<https://doi.org/10.5281/zenodo.21085154>. The Zenodo record is
+<https://zenodo.org/records/21085154>. Cite both the source commit and the
+report DOI when reproducing an experiment.
 """,
         encoding="utf-8",
     )
@@ -418,9 +417,9 @@ prediction panels, and Zenodo handoff packages.
 
 ## Archive And DOI
 
-The Zenodo DOI should be minted from the technical-report release zip and
-`zenodo_metadata.json`, then linked from the code README, report README, and
-Hugging Face dataset card.
+Use the technical-report DOI for archival citation:
+<https://doi.org/10.5281/zenodo.21085154>.
+Record page: <https://zenodo.org/records/21085154>.
 """,
         encoding="utf-8",
     )
@@ -499,6 +498,8 @@ authors:
   - family-names: "WCA Authors"
 version: "0.1.0"
 repository-code: "https://github.com/LibertychaserUS/world-cellular-automata"
+doi: "10.5281/zenodo.21085154"
+url: "https://zenodo.org/records/21085154"
 license: MIT
 """,
         encoding="utf-8",

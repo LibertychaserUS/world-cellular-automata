@@ -49,6 +49,6 @@ prediction panels, and Zenodo handoff packages.
 
 ## Archive And DOI
 
-The Zenodo DOI should be minted from the technical-report release zip and
-`zenodo_metadata.json`, then linked from the code README, report README, and
-Hugging Face dataset card.
+Use the technical-report DOI for archival citation:
+<https://doi.org/10.5281/zenodo.21085154>.
+Record page: <https://zenodo.org/records/21085154>.
