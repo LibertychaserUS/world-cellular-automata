@@ -46,3 +46,9 @@ npm run shadow:planner-compare -- fixtures/profile-backed-plan.json --profile-ro
 
 Use the report and artifact repositories for PDFs, large result tables,
 prediction panels, and Zenodo handoff packages.
+
+## Archive And DOI
+
+The Zenodo DOI should be minted from the technical-report release zip and
+`zenodo_metadata.json`, then linked from the code README, report README, and
+Hugging Face dataset card.

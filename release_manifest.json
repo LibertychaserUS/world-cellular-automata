@@ -18,13 +18,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "8458edd0de2861552fbcdb0f9051dcd36b723019603218acfb4b10b699f215dd",
-      "size": 5539
+      "sha256": "605f8027d814bfaef8ea10676ceb66ec8650283f8f9f54b102d12d27ac0009ce",
+      "size": 6073
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "sha256": "79c2295a7fdaabaaa337a59719316aed577153dd7abb92961184f24068e6fa78",
-      "size": 1513
+      "sha256": "4ae411eb4ed2d921c9db43d6e56bc7e8b9e3fa9a755afb8ea433fe2eecc8b0bb",
+      "size": 1712
     },
     {
       "path": "SECURITY_AND_PRIVACY.md",
@@ -473,8 +473,8 @@
     },
     {
       "path": "scripts/build_open_source_export.py",
-      "sha256": "f70d933ebf34c7f82e4f8afb0622ed59c93cde56552c8dac2e14066ca1b2cdce",
-      "size": 18815
+      "sha256": "6903c58296c0ff521df90606f5b0cde1f9404015ce04c7d55d7f5175876b9e1b",
+      "size": 19548
     },
     {
       "path": "scripts/build_paper_figures.py",
@@ -1022,7 +1022,7 @@
       "size": 269
     }
   ],
-  "generated_at": "2026-07-01T09:21:58.247666+00:00",
+  "generated_at": "2026-07-01T09:39:35.737342+00:00",
   "policy": "allowlist_export_no_raw_artifacts",
   "schema": "world-cellular-automata.release_manifest.v1",
   "source": {

@@ -228,6 +228,10 @@ H_t [B,N,D] -> L_t [B,N,N,D] -> local-world pair evolution -> H_{t+1} [B,N,D]
   <https://github.com/LibertychaserUS/world-cellular-automata-technical-report>
 - Hugging Face report/artifact mirror:
   <https://huggingface.co/datasets/Chaser111/world-cellular-automata-technical-report>
+- Zenodo archive / DOI:
+  pending. The report repository contains `wca_technical_report_v0.1_release.zip`
+  and `zenodo_metadata.json`; use those files to mint the archival DOI, then
+  replace this line with the final Zenodo record URL.
 
 ## What This Repository Does Not Contain
 
@@ -351,6 +355,13 @@ The report repository contains the human-readable technical report and figure
 package. This source repository contains the executable code path. When citing
 or reproducing results, cite both the code commit and the report package
 manifest.
+
+## Archive And DOI
+
+For archival citation, use the technical-report release package and
+`zenodo_metadata.json` in the report repository to create the Zenodo record.
+After Zenodo mints the DOI, add the DOI badge and record URL to this README,
+the report README, and the Hugging Face dataset card.
 """,
         encoding="utf-8",
     )
@@ -404,6 +415,12 @@ npm run shadow:planner-compare -- fixtures/profile-backed-plan.json --profile-ro
 
 Use the report and artifact repositories for PDFs, large result tables,
 prediction panels, and Zenodo handoff packages.
+
+## Archive And DOI
+
+The Zenodo DOI should be minted from the technical-report release zip and
+`zenodo_metadata.json`, then linked from the code README, report README, and
+Hugging Face dataset card.
 """,
         encoding="utf-8",
     )
