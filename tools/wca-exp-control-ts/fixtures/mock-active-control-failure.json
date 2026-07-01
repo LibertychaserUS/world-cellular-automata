@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "mode": "local_mock_active_control",
+  "allow_remote": false,
+  "experiment_id": "mock_active_control_failure",
+  "queue_name": "mock_active_control_failure_queue",
+  "run_id": "mock-failure-run-001",
+  "output_dir": "/tmp/wca-exp-control-ts/mock-active-control/failure",
+  "outcome": "failure",
+  "base_time": "2026-06-25T00:10:00Z",
+  "jobs": [
+    {
+      "job_id": "prepare",
+      "duration_seconds": 1
+    },
+    {
+      "job_id": "report",
+      "duration_seconds": 1,
+      "exit_code": 1
+    }
+  ]
+}

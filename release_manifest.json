@@ -1,15 +1,10 @@
 {
-  "file_count": 196,
+  "file_count": 204,
   "files": [
     {
       "path": ".gitignore",
       "sha256": "2e81840f6ec9a8afb829de53b91cc750705f57560b0e8ac0019bb6ae175553bd",
       "size": 581
-    },
-    {
-      "path": "AGENTS.md",
-      "sha256": "77b458e4db4241fd9c9c8065dd1e79830305d863084e950fd03f1f358c6dcc2b",
-      "size": 6659
     },
     {
       "path": "CITATION.cff",
@@ -23,13 +18,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "5cfda0eefd3cd1a0f94dab5051b2bc8ba628962c468dfb9a62a2c7c39325b2fa",
-      "size": 1953
+      "sha256": "8458edd0de2861552fbcdb0f9051dcd36b723019603218acfb4b10b699f215dd",
+      "size": 5539
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "sha256": "71402446c93646963cb837e041b3fba54148734e367e76b7f6bb9b480e90e8c2",
-      "size": 699
+      "sha256": "79c2295a7fdaabaaa337a59719316aed577153dd7abb92961184f24068e6fa78",
+      "size": 1513
     },
     {
       "path": "SECURITY_AND_PRIVACY.md",
@@ -478,8 +473,8 @@
     },
     {
       "path": "scripts/build_open_source_export.py",
-      "sha256": "5704c52efdb4bb09c09d6e00fd951346afa12e25e4e58b4574e9f423b78f05ac",
-      "size": 13317
+      "sha256": "f70d933ebf34c7f82e4f8afb0622ed59c93cde56552c8dac2e14066ca1b2cdce",
+      "size": 18815
     },
     {
       "path": "scripts/build_paper_figures.py",
@@ -575,6 +570,11 @@
       "path": "scripts/train_maze.py",
       "sha256": "a2c729a95404e76aec2ebd6e319fe7fc18d79f4cd1fafd15c450cd3cac350592",
       "size": 770
+    },
+    {
+      "path": "scripts/wca_exp_control.py",
+      "sha256": "61dca5df31304497179d3425ec0d8a2ead4e003c8d6b608c318c7f8c67d4d710",
+      "size": 79741
     },
     {
       "path": "scripts/wca_plan_slots.py",
@@ -878,8 +878,43 @@
     },
     {
       "path": "tools/wca-exp-control-ts/README.md",
-      "sha256": "3bf8b05febba0683f7da1213e71c5ccd0ba1f9e21cf148388be567879c6a1498",
-      "size": 13934
+      "sha256": "d983f0346df9b492464ac3ee0efc0a36b172dfde62b1be1de8f8f912e114eec0",
+      "size": 841
+    },
+    {
+      "path": "tools/wca-exp-control-ts/fixtures/mock-active-control-failure.json",
+      "sha256": "f84f8d5469494c98b773e0774621413a2b61c73f9cfac9c9488f2a65f78c6e56",
+      "size": 536
+    },
+    {
+      "path": "tools/wca-exp-control-ts/fixtures/mock-active-control-success.json",
+      "sha256": "2b5a1411b1712cd4b364453200d83cf79ba33858ef78d6c3e71fcc40f4aa9b8b",
+      "size": 514
+    },
+    {
+      "path": "tools/wca-exp-control-ts/fixtures/mock-active-control-unsafe-output.json",
+      "sha256": "8e25f45c847e174b756039bc84768f6e747afddfd4238a75b84418cfeed3db0b",
+      "size": 463
+    },
+    {
+      "path": "tools/wca-exp-control-ts/fixtures/profile-audit-requirements.json",
+      "sha256": "cbed9456f3b6e45247779b9f98587498f26d845c4b01741319cef978ee67e2b3",
+      "size": 498
+    },
+    {
+      "path": "tools/wca-exp-control-ts/fixtures/profile-backed-plan.json",
+      "sha256": "5077acc8e90d95194c2767de06135b49c8733cff70da9df217364ae407699082",
+      "size": 962
+    },
+    {
+      "path": "tools/wca-exp-control-ts/fixtures/profile-rows.json",
+      "sha256": "2fdf08a4077cfcd7db31a9b18d4e1bd96c5585edfcf1908fc4492168d2dd2afc",
+      "size": 778
+    },
+    {
+      "path": "tools/wca-exp-control-ts/fixtures/sample-plan.json",
+      "sha256": "92e1e07f41007756883a29c66bc1e2f980577a3968afd997bb30d0eb50db9fd0",
+      "size": 2079
     },
     {
       "path": "tools/wca-exp-control-ts/package.json",
@@ -980,9 +1015,14 @@
       "path": "tools/wca-exp-control-ts/src/shadow_paths.ts",
       "sha256": "a77a299980424a987025b380f70065dad7bab424a952fd82b18cef5d77877b37",
       "size": 3373
+    },
+    {
+      "path": "tools/wca-exp-control-ts/tsconfig.json",
+      "sha256": "3436428cf44f8e4e368261ffc931c10344869309674c4004fdb3d83f630d84af",
+      "size": 269
     }
   ],
-  "generated_at": "2026-06-30T22:35:11.911287+00:00",
+  "generated_at": "2026-07-01T09:21:58.247666+00:00",
   "policy": "allowlist_export_no_raw_artifacts",
   "schema": "world-cellular-automata.release_manifest.v1",
   "source": {

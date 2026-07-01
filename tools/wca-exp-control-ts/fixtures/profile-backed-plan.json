@@ -1,0 +1,31 @@
+{
+  "machine": {
+    "gpu_count": 1,
+    "memory_total_mb": 96000,
+    "memory_fraction_limit": 0.86
+  },
+  "policy": {
+    "scheduling_strategy": "priority_lpt",
+    "frozen_formal_manifest": true,
+    "require_profile_estimates_for_roles": ["formal_gate"]
+  },
+  "jobs": [
+    {
+      "job_id": "formal_profiled",
+      "role": "formal_gate",
+      "gpu_slots": 1,
+      "expected_peak_memory_mb": 90000,
+      "expected_wall_clock_seconds": 999,
+      "expected_gpu_utilization": 0.1,
+      "resource_profile_recipe_id": "wca_profiled",
+      "run_dir": "artifacts/ts-planner/profiled/run",
+      "report_dir": "artifacts/ts-planner/profiled/report",
+      "log_dir": "artifacts/ts-planner/profiled/log",
+      "queue_dir": "artifacts/ts-planner/profiled/queue",
+      "tmp_dir": "artifacts/ts-planner/profiled/tmp",
+      "cache_write_dir": "artifacts/ts-planner/profiled/cache_write",
+      "model_family": "wca",
+      "model_variant": "dense"
+    }
+  ]
+}

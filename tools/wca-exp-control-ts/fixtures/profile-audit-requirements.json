@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "requirements": [
+    {
+      "requirement_id": "wca_profiled_formal_gate",
+      "recipe_id": "wca_profiled",
+      "match": {
+        "gpu_model": "RTX PRO 6000",
+        "gpu_slots": 1,
+        "nodes_or_tokens": 64,
+        "batch_size": 1,
+        "precision": "bf16",
+        "support_mode": "grid_local",
+        "pair_kernel": "dense_mlp_chunk1"
+      },
+      "min_non_oom_samples": 1,
+      "max_oom_rate": 0,
+      "required_for_formal_plan": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "mode": "local_mock_active_control",
+  "allow_remote": false,
+  "experiment_id": "mock_active_control_unsafe_output",
+  "queue_name": "mock_active_control_unsafe_output_queue",
+  "run_id": "mock-unsafe-output-run-001",
+  "output_dir": "../../artifacts/queues/mock-active-control-unsafe",
+  "outcome": "success",
+  "base_time": "2026-06-25T00:20:00Z",
+  "jobs": [
+    {
+      "job_id": "prepare",
+      "duration_seconds": 1
+    }
+  ]
+}

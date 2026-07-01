@@ -25,7 +25,6 @@ DEFAULT_INCLUDE_DIRS = [
 
 DEFAULT_INCLUDE_FILES = [
     "README.md",
-    "AGENTS.md",
     "pyproject.toml",
     "requirements.txt",
     "requirements-real-data.txt",
@@ -68,6 +67,7 @@ DEFAULT_INCLUDE_FILES = [
     "scripts/train_field_baseline.py",
     "scripts/train_field_token_baseline.py",
     "scripts/train_maze.py",
+    "scripts/wca_exp_control.py",
     "scripts/wca_plan_slots.py",
     "tests/test_model_shapes.py",
     "tests/test_maze_batch_schema.py",
@@ -80,10 +80,12 @@ DEFAULT_INCLUDE_FILES = [
     "tests/test_dense_native_mock_equivalence.py",
     "tools/wca-exp-control-ts/README.md",
     "tools/wca-exp-control-ts/package.json",
+    "tools/wca-exp-control-ts/tsconfig.json",
 ]
 
 DEFAULT_INCLUDE_GLOBS = [
     "tools/wca-exp-control-ts/src/**/*.ts",
+    "tools/wca-exp-control-ts/fixtures/*.json",
     "configs/experiments/field_synthetic_heat_smoke.yaml",
     "configs/experiments/smoke_cpu.yaml",
     "configs/experiments/westb_pdebench_v25*_*.yaml",
@@ -220,6 +222,13 @@ H_t [B,N,D] -> L_t [B,N,N,D] -> local-world pair evolution -> H_{t+1} [B,N,D]
 - Tests for model shapes, schema boundaries, no-label-leakage, evaluation, and
   sentinel gates.
 
+## Related Public Repositories
+
+- Technical report, PDFs, LaTeX, figures, tables, and release package:
+  <https://github.com/LibertychaserUS/world-cellular-automata-technical-report>
+- Hugging Face report/artifact mirror:
+  <https://huggingface.co/datasets/Chaser111/world-cellular-automata-technical-report>
+
 ## What This Repository Does Not Contain
 
 Raw artifacts, private VPS logs, remote machine configs, checkpoints, and large
@@ -227,22 +236,102 @@ prediction dumps are intentionally excluded. Report PDFs and figures are
 released separately in `world-cellular-automata-technical-report`. Heavy result
 tables or prediction panels should use a dataset/artifact repository.
 
-## Quick Start
+## Install
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .[dev,real-data,viz]
-python -m pytest tests/test_model_shapes.py tests/test_field_model_smoke.py tests/test_no_label_leakage.py
 ```
+
+Use `.[dev]` for code/test work only. Add `real-data` for PDEBench or
+WeatherBench-style data preparation, and `viz` for figure/table generation.
+
+## Quick Verification
+
+Run the small local checks before trusting any experiment output:
+
+```bash
+python -m pytest tests/test_model_shapes.py tests/test_field_model_smoke.py tests/test_no_label_leakage.py
+python -m pytest tests/test_field_horizon_stratified_eval.py tests/test_eval_field_sentinels.py
+```
+
+The exported test suite is intentionally lightweight; it checks tensor shape
+contracts, schema separation, horizon-stratified evaluation, sentinel behavior,
+and dense/native mock equivalence without requiring private artifacts.
+
+## Smoke Training And Evaluation
+
+The synthetic heat smoke config exercises the public field-prediction training
+path without downloading large datasets:
+
+```bash
+python scripts/train_field.py --config configs/experiments/field_synthetic_heat_smoke.yaml
+```
+
+If a run produces an output directory, evaluate it with the horizon-stratified
+evaluator using the corresponding config/checkpoint paths:
+
+```bash
+python scripts/eval_field_horizon_stratified.py --help
+python scripts/eval_field_sentinels.py --help
+```
+
+For maze smoke work:
+
+```bash
+python scripts/generate_maze_pool.py --help
+python scripts/train_maze.py --help
+python scripts/eval_maze.py --help
+```
+
+## Experiment Control Plane
+
+The public release includes the Python control-plane entrypoint and a
+TypeScript shadow control-plane prototype. The control plane is designed around
+manifested experiments rather than ad hoc shell commands.
+
+Typical lifecycle:
+
+```bash
+python scripts/wca_exp_control.py plan path/to/manifest.json
+python scripts/wca_exp_control.py validate path/to/manifest.json
+python scripts/wca_exp_control.py submit path/to/manifest.json
+python scripts/wca_exp_control.py status path/to/manifest.json
+python scripts/wca_exp_control.py fetch path/to/manifest.json
+python scripts/wca_exp_control.py inventory path/to/manifest.json
+python scripts/wca_exp_control.py report path/to/manifest.json
+```
+
+Remote execution requires machine-specific SSH configuration that is not part
+of the public repository. Before submitting to paid hardware, local static,
+compile, preflight, and contract gates should pass.
 
 For the TypeScript shadow control plane:
 
 ```bash
 cd tools/wca-exp-control-ts
 npm install
-npm test -- --runInBand
+npm run shadow:dry-run -- fixtures/sample-plan.json --pretty
+npm run shadow:planner-compare -- fixtures/profile-backed-plan.json --profile-rows fixtures/profile-rows.json --pretty
 ```
+
+It is not yet the canonical launcher; it is a typed replacement path for future
+control-plane hardening.
+
+## Reproducing The Main Evidence Path
+
+The public config names encode the staged evidence tree:
+
+- V25: recursion-depth ladder and h8x2 rollout evidence.
+- V25c/V25e: attribution and guardrail controls.
+- V26/V27/V28: N=256 capacity, token-equivalent baselines, and interface
+  attribution diagnostics.
+
+To reproduce a formal line, use the exact config/manifest, keep the declared
+split/seed/eval-index plan fixed, and report both numerical metrics and gate
+status. Historical raw anchors and token-level fair comparisons should not be
+mixed into one formal table without stating the interface contract.
 
 ## Evidence Boundary
 
@@ -255,6 +344,13 @@ Current public evidence should be read as a staged research record:
 
 Do not interpret patch-repeated qualitative panels as native full-field
 superiority claims.
+
+## Reporting
+
+The report repository contains the human-readable technical report and figure
+package. This source repository contains the executable code path. When citing
+or reproducing results, cite both the code commit and the report package
+manifest.
 """,
         encoding="utf-8",
     )
@@ -277,15 +373,31 @@ python -m pip install -e .[dev,real-data,viz]
 
 ```bash
 python -m pytest tests/test_model_shapes.py tests/test_field_model_smoke.py tests/test_no_label_leakage.py
+python -m pytest tests/test_field_horizon_stratified_eval.py tests/test_eval_field_sentinels.py
 ```
 
-When TypeScript shadow control-plane source files are needed:
+## Control Plane
+
+```bash
+python scripts/wca_exp_control.py plan path/to/manifest.json
+python scripts/wca_exp_control.py validate path/to/manifest.json
+python scripts/wca_exp_control.py submit path/to/manifest.json
+python scripts/wca_exp_control.py status path/to/manifest.json
+python scripts/wca_exp_control.py fetch path/to/manifest.json
+python scripts/wca_exp_control.py inventory path/to/manifest.json
+python scripts/wca_exp_control.py report path/to/manifest.json
+```
+
+Remote machine details are intentionally excluded from the public repository.
+Run local gates before any paid remote submission.
+
+## TypeScript Shadow Control Plane
 
 ```bash
 cd tools/wca-exp-control-ts
 npm install
-npm install
-npm run build --if-present
+npm run shadow:dry-run -- fixtures/sample-plan.json --pretty
+npm run shadow:planner-compare -- fixtures/profile-backed-plan.json --profile-rows fixtures/profile-rows.json --pretty
 ```
 
 ## Artifact Policy
@@ -304,6 +416,32 @@ known-host files, raw VPS logs, raw cloud cache directories, or local-only paths
 
 The public source export is allowlist-based. If a file is absent from
 `release_manifest.json`, it is not part of the release.
+""",
+        encoding="utf-8",
+    )
+    ts_readme = dst_root / "tools" / "wca-exp-control-ts" / "README.md"
+    ts_readme.write_text(
+        """# WCA Experiment Control TypeScript Shadow Plane
+
+This package is a public, non-production TypeScript shadow of selected WCA
+experiment-control concepts. It is included to document and exercise the typed
+planner/control-plane migration path.
+
+It does not submit jobs, fetch artifacts, mutate queues, SSH to remote machines,
+or replace `scripts/wca_exp_control.py`.
+
+## Public Smoke
+
+```bash
+cd tools/wca-exp-control-ts
+npm install
+npm run shadow:dry-run -- fixtures/sample-plan.json --pretty
+npm run shadow:planner-compare -- fixtures/profile-backed-plan.json --profile-rows fixtures/profile-rows.json --pretty
+```
+
+The full internal TS parity tests depend on private run inventories and are not
+part of the public source export. Public users should treat this package as a
+shadow planner scaffold, not as the canonical experiment launcher.
 """,
         encoding="utf-8",
     )

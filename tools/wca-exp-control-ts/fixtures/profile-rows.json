@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "ok": true,
+  "rows": [
+    {
+      "schema_version": 1,
+      "profile_id": "profile-1",
+      "source_run_id": "runs/profiled",
+      "recipe_id": "wca_profiled",
+      "model_family": "wca",
+      "model_variant": "dense_o4_i2",
+      "dataset_id": "pdebench_cache",
+      "split_id": "train0_800:eval800_100",
+      "gpu_model": "RTX PRO 6000",
+      "gpu_count": 1,
+      "gpu_slots": 1,
+      "nodes_or_tokens": 64,
+      "hidden_dim": 128,
+      "outer_steps": 4,
+      "inner_steps": 2,
+      "batch_size": 1,
+      "precision": "bf16",
+      "support_mode": "grid_local",
+      "pair_kernel": "dense_mlp_chunk1",
+      "peak_memory_mb": 10000,
+      "wall_clock_seconds": 20,
+      "gpu_utilization_mean": 0.8,
+      "oom": false
+    }
+  ]
+}

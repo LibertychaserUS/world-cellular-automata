@@ -1,0 +1,61 @@
+{
+  "machine": {
+    "gpu_count": 2,
+    "memory_total_mb": 96000,
+    "memory_fraction_limit": 0.86
+  },
+  "policy": {
+    "scheduling_strategy": "priority_lpt",
+    "frozen_formal_manifest": true
+  },
+  "jobs": [
+    {
+      "job_id": "explore",
+      "role": "exploratory",
+      "gpu_slots": 1,
+      "expected_peak_memory_mb": 40000,
+      "expected_wall_clock_seconds": 50,
+      "expected_gpu_utilization": 0.7,
+      "run_dir": "artifacts/ts-planner/explore/run",
+      "report_dir": "artifacts/ts-planner/explore/report",
+      "log_dir": "artifacts/ts-planner/explore/log",
+      "queue_dir": "artifacts/ts-planner/explore/queue",
+      "tmp_dir": "artifacts/ts-planner/explore/tmp",
+      "cache_write_dir": "artifacts/ts-planner/explore/cache_write",
+      "model_family": "wca",
+      "model_variant": "dense"
+    },
+    {
+      "job_id": "formal",
+      "role": "formal_gate",
+      "gpu_slots": 1,
+      "expected_peak_memory_mb": 40000,
+      "expected_wall_clock_seconds": 100,
+      "expected_gpu_utilization": 0.7,
+      "run_dir": "artifacts/ts-planner/formal/run",
+      "report_dir": "artifacts/ts-planner/formal/report",
+      "log_dir": "artifacts/ts-planner/formal/log",
+      "queue_dir": "artifacts/ts-planner/formal/queue",
+      "tmp_dir": "artifacts/ts-planner/formal/tmp",
+      "cache_write_dir": "artifacts/ts-planner/formal/cache_write",
+      "model_family": "wca",
+      "model_variant": "dense"
+    },
+    {
+      "job_id": "baseline",
+      "role": "matched_baseline",
+      "gpu_slots": 1,
+      "expected_peak_memory_mb": 40000,
+      "expected_wall_clock_seconds": 100,
+      "expected_gpu_utilization": 0.7,
+      "run_dir": "artifacts/ts-planner/baseline/run",
+      "report_dir": "artifacts/ts-planner/baseline/report",
+      "log_dir": "artifacts/ts-planner/baseline/log",
+      "queue_dir": "artifacts/ts-planner/baseline/queue",
+      "tmp_dir": "artifacts/ts-planner/baseline/tmp",
+      "cache_write_dir": "artifacts/ts-planner/baseline/cache_write",
+      "model_family": "baseline",
+      "model_variant": "matched"
+    }
+  ]
+}
